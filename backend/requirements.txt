@@ -7,4 +7,5 @@ sentence-transformers>=3.0.0
 scikit-learn
 openai==0.28.1
 python-dotenv==1.0.0
-lxml==4.9.3 
+lxml==4.9.3
+gunicorn==21.2.0 

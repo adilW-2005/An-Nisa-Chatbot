@@ -240,6 +240,9 @@ if __name__ == '__main__':
     logger.info("🚀 Starting AnNisa Chatbot API...")
     logger.info("📚 Knowledge base loaded")
     logger.info("🤖 OpenAI integration ready")
-    logger.info("🌐 Server running on http://localhost:5001")
     
-    app.run(debug=True, host='0.0.0.0', port=5001) 
+    # Use environment port for production or default to 5001 for local development
+    port = int(os.environ.get('PORT', 5001))
+    logger.info(f"🌐 Server running on port {port}")
+    
+    app.run(debug=False, host='0.0.0.0', port=port) 

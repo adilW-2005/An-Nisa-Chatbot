@@ -13,7 +13,7 @@ const Chat = () => {
   const [error, setError] = useState('');
   const messagesEndRef = useRef(null);
 
-  const API_BASE_URL = 'http://localhost:5001';
+  const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
 
   // Scroll to bottom when messages change
   useEffect(() => {
