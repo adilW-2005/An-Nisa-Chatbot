@@ -19,7 +19,7 @@
 .chat-header {
   background: #169fcb;
   color: white;
-  padding: 20px 28px;
+  padding: 12px 28px;
   text-align: center;
   box-shadow: 0 4px 20px rgba(22, 159, 203, 0.2);
   position: relative;
@@ -27,8 +27,8 @@
 }
 
 .chat-header h1 {
-  margin: 0 0 8px 0;
-  font-size: 24px;
+  margin: 0 0 4px 0;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.2px;
   font-family: 'Merriweather', Georgia, serif;
@@ -37,7 +37,7 @@
 
 .chat-header p {
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
   opacity: 0.95;
   font-weight: 400;
   letter-spacing: 0.3px;
@@ -337,11 +337,11 @@
   }
 
   .chat-header {
-    padding: 16px 20px;
+    padding: 8px 20px;
   }
 
   .chat-header h1 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .chat-input-form {
