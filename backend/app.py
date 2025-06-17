@@ -20,7 +20,8 @@ from typing import List, Dict
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for React frontend
+# Update CORS configuration to allow requests from the new frontend domain
+CORS(app, resources={r"/*": {"origins": ["https://www.inreachai.com", "http://localhost:3000"]}})
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
