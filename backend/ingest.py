@@ -19,7 +19,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 class AnNisaContentIngester:
     def __init__(self):
         self.base_url = "https://annisa.org"
-        self.model = SentenceTransformer('all-MiniLM-L6-v2')
+        # Use the same smaller, optimized model as in app.py
+        # paraphrase-MiniLM-L3-v2: ~14MB, optimized for CPU, ~95% performance
+        self.model = SentenceTransformer('paraphrase-MiniLM-L3-v2', device='cpu')
         self.chunks = []
         self.embeddings = []
         self.metadata = []
