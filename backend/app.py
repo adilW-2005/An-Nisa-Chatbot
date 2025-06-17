@@ -20,8 +20,8 @@ from typing import List, Dict
 load_dotenv()
 
 app = Flask(__name__)
-# Update CORS configuration to allow requests from the new frontend domain
-CORS(app, resources={r"/*": {"origins": ["https://www.inreachai.com", "http://localhost:3000"]}})
+# Allow CORS for all origins to ensure the backend works for everyone
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
